@@ -1,0 +1,7 @@
+node_modules
+DS_STORE
+.vscode
+.dockerignore
+Dockerfile
+docker-compose.yml
+ormconfig.json
