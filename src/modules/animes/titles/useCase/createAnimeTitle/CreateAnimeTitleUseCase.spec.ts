@@ -40,5 +40,11 @@ it('should not be able to create a new title anime if the same name exists', asy
       banner: animeTitle.banner,
       background: animeTitle.background,
     });
+
+    await createAnimeTitleUseCase.execute({
+      name: animeTitle.name,
+      banner: animeTitle.banner,
+      background: animeTitle.background,
+    });
   }).rejects.toBeInstanceOf(AppError);
 });
